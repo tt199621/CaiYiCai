@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linear_main"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextureView
+        android:id="@+id/texture_preview"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+    <com.example.caiyicai.Arcface.widget.FaceRectView
+        android:id="@+id/face_rect_view"
+        android:visibility="invisible"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--线性布局,用来存放圆点视图-->
+    <LinearLayout
+        android:id="@+id/point_bar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp" />
+</LinearLayout>
